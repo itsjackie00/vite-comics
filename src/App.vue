@@ -1,12 +1,16 @@
 
 <template>
-  <h1>Ciao</h1>
-  <i class="fa-solid fa-house"></i>
+  <HeaderComponents />
 </template>
 
 <script>
+import HeaderComponents from './components/HeaderComponents.vue';
+
   export default {
     name: 'App',
+    components: {
+      HeaderComponents,
+    }
   }
 </script>
 
