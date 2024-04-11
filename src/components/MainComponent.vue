@@ -2,8 +2,12 @@
     <main>
         <div class="container">
             <div class="row pt-5 pb-5  ">
-                <div class="my-cards col-xl-2 col-md-3 " v-for="(item,index) in comics" :key="index">
-                    <CardComponent :image="item.thumb" :title="item.series" />
+                <div class="my-cards col-xl-2 col-md-3 " v-for="(item,index) in comics" :key="index" >
+                    <CardComponent :image="item.thumb" :title="item.series"  />
+
+                    <span id="comic-price" class="text-white hide text-center " >
+                        {{ item.type }}  {{ item.price }}
+                    </span>
                 </div>
             </div>
 
@@ -23,7 +27,8 @@ export default {
     },
     data() {
         return {
-            comics: comics
+            comics: comics,
+            showOnHover: false
         }
     },
     mounted() {
@@ -38,8 +43,28 @@ export default {
 main {
     background-color: $background-dark;
 
+    #comic-price {
+       display: none;
+   } 
+   
     h3 {
         color: white;
+    }
+
+    .my-cards {
+        margin-bottom: 30px;
+    }
+
+    .my-cards:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+
+    }
+
+    .my-cards:hover #comic-price{
+        display: block;
+
     }
 }
 </style>
