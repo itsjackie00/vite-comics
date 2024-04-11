@@ -1,6 +1,6 @@
 <template>
     <footer id="footer-top" class="my-container">
-        <div >
+        <div class="pt-3 pb-3">
             <div class="row w-100" >
                 <div class="list-item  col-xl-2 col-md-5 col-sm-6   text-center align-content-center py-4  " v-for="(item, key) in merchants" :key="key.id">
                     <img :src="item.img" :alt="item.text">

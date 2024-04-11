@@ -1,6 +1,6 @@
 <template>
     <footer id="footer-middle">
-        <div class="footer-container container">
+        <div class="footer-container container pt-5 pb-3 ">
             <div id="left">
             <div class="row py-2 w-100">
                     <MenuComponents title="DC COMICS" :items="linksFooter.COMICS" />
