@@ -1,6 +1,6 @@
 <template>
-    <footer id="footer-top">
-        <div class="my-container">
+    <footer id="footer-top" class="my-container">
+        <div >
             <div class="row w-100" >
                 <div class="list-item  col-xl-2 col-md-5 col-sm-6   text-center align-content-center py-4  " v-for="(item, key) in merchants" :key="key.id">
                     <img :src="item.img" :alt="item.text">
@@ -50,29 +50,19 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-.debug{
-    border: 1px solid red;
-}
-
 #footer-top{
     background-color: $primary;
     color: white;
-    width: 100%;
     position: relative;
-
-    .my-container{
-        width: 70%;
-        margin: 0 auto;
-    }
 
     .list-item{
         margin: 0 auto;
     }
 
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .my-container{
+        width: 45%;
+        margin: 0 auto;
+
     }
 
     img{

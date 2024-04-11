@@ -1,9 +1,9 @@
 <template>
     <main>
-        <div class="my-container p-2 ">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mb-4" v-for="(item,index) in comics" :key="index">
-                    <CardComponent :thumb="item.thumb" :price="item.price" :series="item.series" />
+                <div class="my-cards col-xl-2 col-md-3 " v-for="(item,index) in comics" :key="index">
+                    <CardComponent :image="item.thumb" :title="item.series" />
                 </div>
             </div>
 
