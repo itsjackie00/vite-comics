@@ -18,7 +18,7 @@
 
 #footer-bottom{
     background-color: #303030;
-    height: 80px;
+    height: 130px;
     position: relative;
 
     .my-container{
