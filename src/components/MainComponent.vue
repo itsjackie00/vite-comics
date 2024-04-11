@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row pt-5 pb-5  ">
                 <div class="my-cards col-xl-2 col-md-3 " v-for="(item,index) in comics" :key="index">
                     <CardComponent :image="item.thumb" :title="item.series" />
                 </div>
