@@ -1,8 +1,8 @@
 <template>
     <footer id="footer-top">
-        <div >
-            <div class="row" >
-                <div class="col-2 text-center align-content-center py-4" v-for="(item, key) in merchants" :key="key.id">
+        <div class="my-container">
+            <div class="row w-100" >
+                <div class="list-item  col-xl-2 col-md-5 col-sm-6   text-center align-content-center py-4  " v-for="(item, key) in merchants" :key="key.id">
                     <img :src="item.img" :alt="item.text">
                     {{ item.text }}
                 </div>
@@ -50,20 +50,32 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
+.debug{
+    border: 1px solid red;
+}
+
 #footer-top{
     background-color: $primary;
-    height: 150px;
     color: white;
+    width: 100%;
+
+    .my-container{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .list-item{
+        margin: 0 auto;
+    }
 
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
 
     img{
-        width: 45px;
+        width: 50px;
         margin-right: 10px;
 
         &:hover{
@@ -71,5 +83,14 @@ export default {
         }
     }
     
+}
+
+/* ==== MEDIA QUERY ==== */
+@media screen and (min-width: 1200px) {
+    #footer-top{
+        .my-container{
+            width: 95%;
+        }
+    }
 }
 </style>
