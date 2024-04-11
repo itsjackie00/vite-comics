@@ -1,6 +1,6 @@
 <template>
     <footer id="footer-bottom">
-        <div class="container">
+        <div class="my-container">
             <button type="button" class="btn btn-link">SIGN-UP NOW!</button>
         </div>
        
@@ -19,6 +19,12 @@
 #footer-bottom{
     background-color: #303030;
     height: 80px;
+    position: relative;
+
+    .my-container{
+        width: 87%;
+        margin: 0 auto;
+    }
 
     button{
         border: 3px solid $primary;

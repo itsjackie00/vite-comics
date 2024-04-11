@@ -1,5 +1,5 @@
 <template>
-    <div class="col-4 py-4">
+    <div class="col-xl-4 col-md-5 col-sm-9 py-4">
         <h5>{{ title }}</h5>
         <ul>
             <li v-for="(item, index) in items" :key="index">

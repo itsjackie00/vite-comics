@@ -1,10 +1,13 @@
 
 <template>
-  <HeaderComponents />
+  <div class="main-container">
+    <HeaderComponents />
   <MainComponent />
   <FooterComponentTop />
   <FooterComponentMiddle />
   <FooterComponentBottom />
+  </div>
+  
 </template>
 
 <script>
@@ -27,5 +30,7 @@ import FooterComponentBottom from './components/FooterComponentBottom.vue';
 </script>
 
 <style lang="scss" scoped>
-
+.main-container{
+  width: 100%;
+}
 </style>

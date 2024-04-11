@@ -1,7 +1,7 @@
 <template>
 
-    <header class="container-fluid">
-        <div id="header-container">
+    <header>
+        <div id="header-container" class="container">
             <div id="logo">
                 <img src="/img/dc-logo.png" alt="Logo">
             </div>
@@ -80,7 +80,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
 
     ul {

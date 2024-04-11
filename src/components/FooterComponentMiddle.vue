@@ -1,16 +1,16 @@
 <template>
     <footer id="footer-middle">
-        <div class="footer-container container ">
+        <div class="footer-container my-container">
             <div id="left">
-                <div class="row">
+            <div class="row py-2 w-100">
                     <MenuComponents title="DC COMICS" :items="linksFooter.COMICS" />
                     <MenuComponents title="DC" :items="linksFooter.DC" />
                     <MenuComponents title="SITES" :items="linksFooter.SITES" />
                     <MenuComponents title="SHOP" :items="linksFooter.SHOP" />
                 </div>
             </div>
-            <div id="right" class="image-container">
-                <img src="/img/dc-logo-bg.png" alt="DC logo">
+            <div class="image-container"id="right">
+                <img src="/img/dc-logo-bg.png" alt="DC logo" >
             </div>
         </div>
     </footer>
@@ -148,12 +148,11 @@ export default {
     background-image: url('/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
     color: white;
     width: 100%;
-    
+
     .footer-container {
-         display: flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
@@ -166,19 +165,27 @@ export default {
         }
 
         #left {
-            width: 40%;
+            width: 45%;
         }
 
         #right {
-            width: 60%;
+            width: 65%;
 
-            img{
+            img {
                 position: absolute;
-                width: 550px;
-                
+                width: 700px;
+                overflow: hidden;
+
             }
         }
     }
 
+}
+
+/* ==== MEDIA QUERY ==== */
+@media screen and (max-width: 768px) {
+    #footer-middle .footer-container #right img {
+        width: 400px;
+    }
 }
 </style>

@@ -58,6 +58,7 @@ export default {
     background-color: $primary;
     color: white;
     width: 100%;
+    position: relative;
 
     .my-container{
         width: 70%;
