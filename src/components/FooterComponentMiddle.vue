@@ -1,6 +1,6 @@
 <template>
     <footer id="footer-middle">
-        <div class="footer-container">
+        <div class="footer-container container ">
             <div id="left">
                 <div class="row">
                     <MenuComponents title="DC COMICS" :items="linksFooter.COMICS" />
@@ -151,9 +151,9 @@ export default {
     height: 450px;
     color: white;
     width: 100%;
-
+    
     .footer-container {
-        display: flex;
+         display: flex;
         justify-content: space-between;
         align-items: center;
 
@@ -166,7 +166,7 @@ export default {
         }
 
         #left {
-            width: 30%;
+            width: 40%;
         }
 
         #right {
@@ -174,7 +174,7 @@ export default {
 
             img{
                 position: absolute;
-                width: 45%;
+                width: 550px;
                 
             }
         }
