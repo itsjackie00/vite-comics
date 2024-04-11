@@ -94,12 +94,14 @@ header {
         a {
             text-decoration: none;
             color: black;
+            border-bottom: 5px solid transparent;
+            padding: 0px 5px 73px 0px;
+            &:hover {
+                color: $primary;
+                border-bottom: 5px solid $primary;
+                padding: 0px 5px 73px 0px;
+            }
         }
-
-        a:hover {
-            color: $primary;
-        }
-
         li {
             padding: 0 15px;
         }
