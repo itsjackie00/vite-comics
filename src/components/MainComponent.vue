@@ -8,6 +8,11 @@
                     <span id="comic-price" class="text-white hide text-center " >
                         {{ item.type }}  {{ item.price }}
                     </span>
+                    <div class="hide" id="button">
+                        <button class="btn btn-primary w-100 text-white">
+                        <a :href="item.url">BUY NOW</a>
+                    </button>
+                    </div>
                 </div>
             </div>
 
@@ -30,7 +35,9 @@ export default {
             comics: comics,
             showOnHover: false
         }
+
     },
+    
     mounted() {
         console.log(this.comics)
     }
@@ -50,19 +57,16 @@ main {
     h3 {
         color: white;
     }
+    /* .hide{
+        display: none;
+    } */
 
     .my-cards {
         margin-bottom: 30px;
     }
 
-    .my-cards:hover {
-        cursor: pointer;
-        opacity: 0.5;
-        transition: 0.5s;
-
-    }
-
-    .my-cards:hover #comic-price{
+    .my-cards:hover #comic-price,
+    .my-cards:hover #button {
         display: block;
 
     }
