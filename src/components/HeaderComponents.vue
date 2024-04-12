@@ -1,16 +1,18 @@
 <template>
 
     <header>
-        <div id="header-container" class="container">
-            <div id="logo">
-                <img src="/img/dc-logo.png" alt="Logo">
-            </div>
-            <div>
-                <ul>
-                    <li v-for="(item, key) in menu" :key="key">
-                        <a :href="item.url">{{ item.text }}</a>
-                    </li>
-                </ul>
+        <div id="header-container">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap" >
+                <div id="logo">
+                    <img src="/img/dc-logo.png" alt="Logo">
+                </div>
+                <div>
+                    <ul>
+                        <li v-for="(item, key) in menu" :key="key">
+                            <a :href="item.url">{{ item.text }}</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
